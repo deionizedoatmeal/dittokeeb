@@ -408,6 +408,7 @@
           "/GPIO28_ADC2",
           "/GPIO29_ADC3",
           "/LEDS",
+          "/LEDS_5V",
           "/QSPI_SCLK",
           "/QSPI_SD0",
           "/QSPI_SD1",
@@ -446,7 +447,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "ditto.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

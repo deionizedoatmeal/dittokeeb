@@ -1,4 +1,4 @@
-20107247472993765
+20108899307722218
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -85392,6 +85392,13 @@ SMT_Edge_Male
 0
 1
 1
+dip
+SN74AHCT125QDRG4Q1
+
+
+0
+14
+14
 dip
 TestPoint_Pad_D2.0mm
 SMD pad as test Point, diameter 2.0mm
