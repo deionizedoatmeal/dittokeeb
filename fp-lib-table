@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "dip")(type "KiCad")(uri "${KIPRJMOD}/dip.pretty")(options "")(descr ""))
-)
