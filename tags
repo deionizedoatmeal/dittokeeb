@@ -67,7 +67,6 @@ a	mechanical/keyboard-layout.json	/^      "a": 4,$/;"	n	object:3.6
 a	mechanical/keyboard-layout.json	/^      "a": 7,$/;"	n	object:3.4
 dittokeeb	README.md	/^# dittokeeb$/;"	c
 kbd	software/code.py	/^kbd = Keyboard(usb_hid.devices)$/;"	v
-keycode_LUT	software/code.py	/^keycode_LUT = [$/;"	v
 keymap	software/code.py	/^keymap = {$/;"	v
 keys	software/code.py	/^keys = keypad.KeyMatrix($/;"	v
 ns4bc76f8d0101	mechanical/plate.svg	/^     xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink">$/;"	n	uri:http://www.w3.org/2000/svg
