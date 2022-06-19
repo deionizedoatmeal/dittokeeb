@@ -30,13 +30,12 @@ keys = keypad.KeyMatrix(
             board.GP8, 
             board.GP9, 
             board.GP10, 
-            board.GP10, 
             board.GP11, 
             board.GP12, 
             board.GP13, 
             board.GP14, 
             board.GP15, 
-            board.GP16
+            board.GP16 
         ),
         interval=0.050,
         columns_to_anodes = False
@@ -46,208 +45,195 @@ kbd = Keyboard(usb_hid.devices)
 
 # EDIT KEYBOARD LAYERS HERE
 # create a keycode dictionary including modifier state and keycodes
-keymap = {
-            # top row keys, left to right
-            (0): (0, Keycode.ESCAPE),
-            (1): (0, Keycode.Q),
-            (2): (0, Keycode.W),
-            (3): (0, Keycode.E),
-            (4): (0, Keycode.R),
-            (5): (0, Keycode.T),
-            (6): (0, Keycode.Y),
-            (7): (0, Keycode.U),
-            (8): (0, Keycode.I),
-            (9): (0, Keycode.O),
-            (10): (0, Keycode.P),
-            (11): (0, Keycode.BACKSPACE),
-
-            # 2nd row keys, left to right
-            (12): (0, Keycode.TAB),
-            (13): (0, Keycode.A,
-            (14): (0, Keycode.S),
-            (15): (0, Keycode.D),
-            (16): (0, Keycode.F),
-            (17): (0, Keycode.G),
-            (18): (0, Keycode.H),
-            (19): (0, Keycode.J),
-            (20): (0, Keycode.K),
-            (21): (0, Keycode.L)
-            (22): (0, Keycode.ENTER)
-
-            # 3rd row keys, left to right
-            (23): (1, Keycode.LEFT_SHIFT),
-            (24): (0, Keycode.Z),
-            (25): (0, Keycode.X),
-            (26): (0, Keycode.C),
-            (26): (0, Keycode.V),
-            (28): (0, Keycode.B),
-            (29): (0, Keycode.N),
-            (30): (0, Keycode.M),
-            (31): (0, Keycode.GREATER),
-            (32): (1, Keycode.RIGHT_SHIFT),
-            (33): (2, Keycode.FN),
-
-            # bottom row keys, left to right
-            (34): (0, Keycode.LEFT_CONTROL)
-            (35): (0, Keycode.WINDOWS)
-            (36): (0, Keycode.LEFT_ALT)
-            (37): (0, Keycode.SPACEBAR)
-            (38): (0, Keycode.RIGHT_ALT)
-            (39): (0, Keycode.RIGHT_CONTROL)
+keymap = {(0): (0, Keycode.ESCAPE),
+    # top row keys, left to right
+    (1): (0, Keycode.Q),
+    (2): (0, Keycode.W),
+    (3): (0, Keycode.E),
+    (4): (0, Keycode.R),
+    (5): (0, Keycode.T),
+    (6): (0, Keycode.Y),
+    (7): (0, Keycode.U),
+    (8): (0, Keycode.I),
+    (9): (0, Keycode.O),
+    (10): (0, Keycode.P),
+    (11): (0, Keycode.BACKSPACE),
+    # 2nd row keys, left to right
+    (12): (0, Keycode.TAB),
+    (13): (0, Keycode.A),
+    (14): (0, Keycode.S),
+    (15): (0, Keycode.D),
+    (16): (0, Keycode.F),
+    (17): (0, Keycode.G),
+    (18): (0, Keycode.H),
+    (19): (0, Keycode.J),
+    (20): (0, Keycode.K),
+    (21): (0, Keycode.L),
+    (22): (0, Keycode.ENTER),
+    # 3rd row keys, left to right
+    (23): (1, Keycode.LEFT_SHIFT),
+    (24): (0, Keycode.Z),
+    (25): (0, Keycode.X),
+    (26): (0, Keycode.C),
+    (27): (0, Keycode.V),
+    (28): (0, Keycode.B),
+    (29): (0, Keycode.N),
+    (30): (0, Keycode.M),
+    (31): (0, Keycode.PERIOD),
+    (32): (1, Keycode.RIGHT_SHIFT),
+    (33): (2, Keycode.APPLICATION),
+    # bottom row keys, left to right
+    (34): (0, Keycode.LEFT_CONTROL),
+    (35): (0, Keycode.WINDOWS),
+    (36): (0, Keycode.LEFT_ALT),
+    (37): (0, Keycode.SPACEBAR),
+    (38): (0, Keycode.RIGHT_ALT),
+    (39): (0, Keycode.RIGHT_CONTROL)
 }
 
-# define the shift layer of the keyboard
-keymap_shift = {
-            # top row keys, left to right
-            (0): (0, Keycode.ESCAPE),
-            (1): (0, Keycode.Q),
-            (2): (0, Keycode.W),
-            (3): (0, Keycode.E),
-            (4): (0, Keycode.R),
-            (5): (0, Keycode.T),
-            (6): (0, Keycode.Y),
-            (7): (0, Keycode.U),
-            (8): (0, Keycode.I),
-            (9): (0, Keycode.O),
-            (10): (0, Keycode.P),
-            (11): (0, Keycode.BACKSPACE),
+# # define the shift layer of the keyboard
+# keymap_shift = {
+#     # top row keys, left to right
+#     (0): (0, Keycode.ESCAPE),
+#     (1): (0, Keycode.Q),
+#     (2): (0, Keycode.W),
+#     (3): (0, Keycode.E),
+#     (4): (0, Keycode.R),
+#     (5): (0, Keycode.T),
+#     (6): (0, Keycode.Y),
+#     (7): (0, Keycode.U),
+#     (8): (0, Keycode.I),
+#     (9): (0, Keycode.O),
+#     (10): (0, Keycode.P),
+#     (11): (0, Keycode.BACKSPACE),
+#     # 2nd row keys, left to right
+#     (12): (0, Keycode.TAB),
+#     (13): (0, Keycode.A),
+#     (14): (0, Keycode.S),
+#     (15): (0, Keycode.D),
+#     (16): (0, Keycode.F),
+#     (17): (0, Keycode.G),
+#     (18): (0, Keycode.H),
+#     (19): (0, Keycode.J),
+#     (20): (0, Keycode.K),
+#     (21): (0, Keycode.L),
+#     (22): (0, Keycode.ENTER),
+#     # 3rd row keys, left to right
+#     (23): (1, Keycode.LEFT_SHIFT),
+#     (24): (0, Keycode.Z),
+#     (25): (0, Keycode.X),
+#     (26): (0, Keycode.C),
+#     (27): (0, Keycode.V),
+#     (28): (0, Keycode.B),
+#     (29): (0, Keycode.N),
+#     (30): (0, Keycode.M),
+#     (31): (0, Keycode.PERIOD),
+#     (32): (1, Keycode.RIGHT_SHIFT),
+#     (33): (2, Keycode.FN),
+#     # bottom row keys, left to right
+#     (34): (0, Keycode.LEFT_CONTROL),
+#     (35): (0, Keycode.WINDOWS),
+#     (36): (0, Keycode.LEFT_ALT),
+#     (37): (0, Keycode.SPACEBAR),
+#     (38): (0, Keycode.RIGHT_ALT),
+#     (39): (0, Keycode.RIGHT_CONTROL)
+# }
 
-            # 2nd row keys, left to right
-            (12): (0, Keycode.TAB),
-            (13): (0, Keycode.A,
-            (14): (0, Keycode.S),
-            (15): (0, Keycode.D),
-            (16): (0, Keycode.F),
-            (17): (0, Keycode.G),
-            (18): (0, Keycode.H),
-            (19): (0, Keycode.J),
-            (20): (0, Keycode.K),
-            (21): (0, Keycode.L)
-            (22): (0, Keycode.ENTER)
+# # define the Fn layer of the keyboard
+# keymap_fn = {
+#     # top row keys, left to right
+#     (0): (0, Keycode.GRAVE_ACCENT),
+#     (1): (0, Keycode.ONE),
+#     (2): (0, Keycode.TWO),
+#     (3): (0, Keycode.THREE),
+#     (4): (0, Keycode.FOUR),
+#     (5): (0, Keycode.FIVE),
+#     (6): (0, Keycode.SIX),
+#     (7): (0, Keycode.SEVEN),
+#     (8): (0, Keycode.EIGHT),
+#     (9): (0, Keycode.NINE),
+#     (10): (0, Keycode.ZERO),
+#     (11): (0, Keycode.EQUALS),
+#     # 2nd row keys, left to right
+#     (12): (0, Keycode.CAPS_LOCK),
+#     (13): (0, Keycode.A),
+#     (14): (0, Keycode.UP_ARROW),
+#     (15): (0, Keycode.D),
+#     (16): (0, Keycode.F),
+#     (17): (0, Keycode.G),
+#     (18): (0, Keycode.MINUS),
+#     (19): (0, Keycode.LEFT_BRACKET),
+#     (20): (0, Keycode.RIGHT_BRACKET),
+#     (21): (0, Keycode.FORWARD_SLASH),
+#     (22): (0, Keycode.BACK_SLASH),
+#     # 3rd row keys, left to right
+#     (23): (1, Keycode.LEFT_SHIFT),
+#     (24): (0, Keycode.LEFT_ARROW),
+#     (25): (0, Keycode.DOWN_ARROW),
+#     (26): (0, Keycode.RIGHT_ARROW),
+#     (26): (0, Keycode.V),
+#     (28): (0, Keycode.SEMICOLON),
+#     (29): (0, Keycode.APOSTROPHE),
+#     (30): (0, Keycode.COMMA),
+#     (31): (0, Keycode.PERIOD),
+#     (32): (1, Keycode.RIGHT_SHIFT),
+#     (33): (2, Keycode.FN),
+#     # bottom row keys, left to right
+#     (34): (0, Keycode.LEFT_CONTROL),
+#     (35): (0, Keycode.WINDOWS),
+#     (36): (0, Keycode.LEFT_ALT),
+#     (37): (0, Keycode.SPACEBAR),
+#     (38): (0, Keycode.RIGHT_ALT),
+#     (39): (0, Keycode.RIGHT_CONTROL)
+# }
 
-            # 3rd row keys, left to right
-            (23): (1, Keycode.LEFT_SHIFT),
-            (24): (0, Keycode.Z),
-            (25): (0, Keycode.X),
-            (26): (0, Keycode.C),
-            (26): (0, Keycode.V),
-            (28): (0, Keycode.B),
-            (29): (0, Keycode.N),
-            (30): (0, Keycode.M),
-            (31): (0, Keycode.PERIOD),
-            (32): (1, Keycode.RIGHT_SHIFT),
-            (33): (2, Keycode.FN),
-
-            # bottom row keys, left to right
-            (34): (0, Keycode.LEFT_CONTROL)
-            (35): (0, Keycode.WINDOWS)
-            (36): (0, Keycode.LEFT_ALT)
-            (37): (0, Keycode.SPACEBAR)
-            (38): (0, Keycode.RIGHT_ALT)
-            (39): (0, Keycode.RIGHT_CONTROL)
-}
-
-# define the Fn layer of the keyboard
-keymap_fn = {
-            # top row keys, left to right
-            (0): (0, Keycode.GRAVE_ACCENT),
-            (1): (0, Keycode.ONE),
-            (2): (0, Keycode.TWO),
-            (3): (0, Keycode.THREE),
-            (4): (0, Keycode.FOUR),
-            (5): (0, Keycode.FIVE),
-            (6): (0, Keycode.SIX),
-            (7): (0, Keycode.SEVEN),
-            (8): (0, Keycode.EIGHT),
-            (9): (0, Keycode.NINE),
-            (10): (0, Keycode.ZERO),
-            (11): (0, Keycode.EQUALS),
-
-            # 2nd row keys, left to right
-            (12): (0, Keycode.CAPS_LOCK),
-            (13): (0, Keycode.A),
-            (14): (0, Keycode.UP_ARROW),
-            (15): (0, Keycode.D),
-            (16): (0, Keycode.F),
-            (17): (0, Keycode.G),
-            (18): (0, Keycode.HYPHEN),
-            (19): (0, Keycode.LEFT_BRACKET),
-            (20): (0, Keycode.RIGHT_BRACKET,
-            (21): (0, Keycode.FORWARD_SLASH)
-            (22): (0, Keycode.BACK_SLASH)
-
-            # 3rd row keys, left to right
-            (23): (1, Keycode.LEFT_SHIFT),
-            (24): (0, Keycode.LEFT_ARROW),
-            (25): (0, Keycode.DOWN_ARROW),
-            (26): (0, Keycode.RIGHT_ARROW),
-            (26): (0, Keycode.V),
-            (28): (0, Keycode.SEMICOLON),
-            (29): (0, Keycode.APOSTROPHE),
-            (30): (0, Keycode.COMMA),
-            (31): (0, Keycode.PERIOD),
-            (32): (1, Keycode.RIGHT_SHIFT),
-            (33): (2, Keycode.FN),
-
-            # bottom row keys, left to right
-            (34): (0, Keycode.LEFT_CONTROL)
-            (35): (0, Keycode.WINDOWS)
-            (36): (0, Keycode.LEFT_ALT)
-            (37): (0, Keycode.SPACEBAR)
-            (38): (0, Keycode.RIGHT_ALT)
-            (39): (0, Keycode.RIGHT_CONTROL)
-}
-
-# define the Fn + shift layer of the keyboard
-keymap_fnshift = {
-            # top row keys, left to right
-            (0): (0, Keycode.TILDA),
-            (1): (0, Keycode.ECLAIM),
-            (2): (0, Keycode.AT),
-            (3): (0, Keycode.NUMBERSIGN),
-            (4): (0, Keycode.DOLLAR),
-            (5): (0, Keycode.PERCENT),
-            (6): (0, Keycode.ASCIICIRCUM),
-            (7): (0, Keycode.AMPERSAND),
-            (8): (0, Keycode.ASTERICKS,
-            (9): (0, Keycode.LEFT_PAREN,
-            (10): (0, Keycode.RIGHT_PAREN),
-            (11): (0, Keycode.PLUS),
-
-            # 2nd row keys, left to right
-            (12): (0, Keycode.CAPS_LOCK),
-            (13): (0, Keycode.A),
-            (14): (0, Keycode.UP_ARROW),
-            (15): (0, Keycode.D),
-            (16): (0, Keycode.F),
-            (17): (0, Keycode.G),
-            (18): (0, Keycode.UNDERSCORE),
-            (19): (0, Keycode.LEFT_BRACE),
-            (20): (0, Keycode.RIGHT_BRACE),
-            (21): (0, Keycode.QUESTION)
-            (22): (0, Keycode.BAR)
-
-            # 3rd row keys, left to right
-            (23): (1, Keycode.LEFT_SHIFT),
-            (24): (0, Keycode.LEFT_ARROW),
-            (25): (0, Keycode.DOWN_ARROW),
-            (26): (0, Keycode.RIGHT_ARROW),
-            (26): (0, Keycode.V),
-            (28): (0, Keycode.COLON),
-            (29): (0, Keycode.QUOTE),
-            (30): (0, Keycode.LESS),
-            (31): (0, Keycode.GREATER),
-            (32): (1, Keycode.RIGHT_SHIFT),
-            (33): (2, Keycode.FN),
-
-            # bottom row keys, left to right
-            (34): (0, Keycode.LEFT_CONTROL)
-            (35): (0, Keycode.WINDOWS)
-            (36): (0, Keycode.LEFT_ALT)
-            (37): (0, Keycode.SPACEBAR)
-            (38): (0, Keycode.RIGHT_ALT)
-            (39): (0, Keycode.RIGHT_CONTROL)
-}
+# # define the Fn + shift layer of the keyboard
+# keymap_fnshift = {
+#     # top row keys, left to right
+#     (0): (0, Keycode.TILDA),
+#     (1): (0, Keycode.ECLAIM),
+#     (2): (0, Keycode.AT),
+#     (3): (0, Keycode.POUND),
+#     (4): (0, Keycode.DOLLAR),
+#     (5): (0, Keycode.PERCENT),
+#     (6): (0, Keycode.ASCIICIRCUM),
+#     (7): (0, Keycode.AMPERSAND),
+#     (8): (0, Keycode.ASTERICKS),
+#     (9): (0, Keycode.LEFT_PAREN),
+#     (10): (0, Keycode.RIGHT_PAREN),
+#     (11): (0, Keycode.PLUS),
+#     # 2nd row keys, left to right
+#     (12): (0, Keycode.CAPS_LOCK),
+#     (13): (0, Keycode.A),
+#     (14): (0, Keycode.UP_ARROW),
+#     (15): (0, Keycode.D),
+#     (16): (0, Keycode.F),
+#     (17): (0, Keycode.G),
+#     (18): (0, Keycode.UNDERSCORE),
+#     (19): (0, Keycode.LEFT_BRACE),
+#     (20): (0, Keycode.RIGHT_BRACE),
+#     (21): (0, Keycode.QUESTION),
+#     (22): (0, Keycode.BAR),
+#     # 3rd row keys, left to right
+#     (23): (1, Keycode.LEFT_SHIFT),
+#     (24): (0, Keycode.LEFT_ARROW),
+#     (25): (0, Keycode.DOWN_ARROW),
+#     (26): (0, Keycode.RIGHT_ARROW),
+#     (26): (0, Keycode.V),
+#     (28): (0, Keycode.COLON),
+#     (29): (0, Keycode.QUOTE),
+#     (30): (0, Keycode.COMMA),
+#     (31): (0, Keycode.PERIOD),
+#     (32): (1, Keycode.RIGHT_SHIFT),
+#     (33): (2, Keycode.FN),
+#     # bottom row keys, left to right
+#     (34): (0, Keycode.LEFT_CONTROL),
+#     (35): (0, Keycode.WINDOWS),
+#     (36): (0, Keycode.LEFT_ALT),
+#     (37): (0, Keycode.SPACEBAR),
+#     (38): (0, Keycode.RIGHT_ALT),
+#     (39): (0, Keycode.RIGHT_CONTROL)
+# }
 
 # shift -> 1
 # fn -> 2
