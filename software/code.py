@@ -1,5 +1,6 @@
 import board
 import time
+import random
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from kmk.scanners import DiodeOrientation
@@ -15,6 +16,20 @@ rgb_ext = RGB(pixel_pin=board.GP0, num_pixels=7, animation_mode=AnimationModes.S
 # using adafruit:
 # import neopixel
 # pixels = neopixel.NeoPixel(board.GP0, num_pixels=7, brightness=0.5)
+
+# some fun ditto facts
+facts = [
+        "Ditto is capable of transforming into any Pokemon that it comes across.",
+        "Fan speculation is that Ditto and Mew are related as Mew can also use Transform, a move exclusive to Ditto.",
+        "Ditto's transformation into another Pokemon will fail if you make it laugh!",
+        "Dittos have very bad memory.",
+        "Ditto and Manaphy are the only Pokemon that are both able to breed yet unobtainable through breeding.",
+        "Ditto's name may be derived from ditto (that which was stated before; copy of a document; imitation).",
+        "Ditto is not known to evolve into or from any other Pokemon."
+]
+
+# TODO: generates the random number when keyboard boots, not when fact is called
+DF = send_string("Fun Fact: " + facts[random.randint(0, len(facts) - 1)])
 
 # define the KMK keyboard object
 ditto = KMKKeyboard()
@@ -73,13 +88,13 @@ ditto.keymap = [
     [KC.TILDE, KC.N1, KC.N2, KC.N3, KC.N4, KC.N5, KC.N6, KC.N7, KC.N8, KC.N9, KC.N0, KC.EQUAL,
     KC.CAPSLOCK, KC.A, KC.UP, KC.D, KC.F, KC.G, KC.MINUS, KC.LBRACKET, KC.RBRACKET, KC.SLASH, KC.NO,  KC.BSLASH,
     KC.LSHIFT, KC.NO, KC.LEFT, KC.DOWN, KC.RIGHT, KC.V, KC.SCOLON, KC.QUOTE, KC.COMMA, KC.RIGHT_ANGLE_BRACKET, KC.RSHIFT, Fn,
-    KC.LCTL, KC.LGUI, KC.LALT, KC.NO, KC.NO, KC.SPC, KC.NO, KC.NO, KC.NO, KC.NO, KC.RALT, KC.RCTL],
+    KC.LCTL, KC.LGUI, KC.LALT, KC.NO, KC.NO, DF, KC.NO, KC.NO, KC.NO, KC.NO, KC.RALT, KC.RCTL],
 
     # layer 3 fn + shift (i.e. !@#$%)
     [KC.TILDE, KC.EXCLAIM, KC.AT, KC.HASH, KC.DOLLAR, KC.PERCENT, KC.CIRCUMFLEX, KC.AMPERSAND, KC.ASTERISK, KC.LEFT_PAREN, KC.RIGHT_PAREN, KC.NO, KC.PLUS,
     KC.RGB_TOG, KC.A, KC.RGB_VAI, KC.D, KC.F, KC.G, KC.H, KC.LEFT_CURLY_BRACE, KC.RIGHT_CURLY_BRACE, KC.QUESTION, KC.PIPE,
     KC.LSHIFT, KC.NO, KC.Z, KC.RGB_VAD, KC.C, KC.V, KC.COLON, KC.DOUBLE_QUOTE, KC.LEFT_ANGLE_BRACKET, KC.RIGHT_ANGLE_BRACKET, KC.RSHIFT, Fn,
-    KC.LCTL, KC.LGUI, KC.LALT, KC.NO, KC.NO, KC.SPC, KC.NO, KC.NO, KC.NO, KC.NO, KC.RALT, KC.RCTL]
+    KC.LCTL, KC.LGUI, KC.LALT, KC.NO, KC.NO, DF, KC.NO, KC.NO, KC.NO, KC.NO, KC.RALT, KC.RCTL]
     ]
 
 if __name__ == '__main__':
