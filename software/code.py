@@ -17,6 +17,7 @@ rgb_ext = RGB(pixel_pin=board.GP0, num_pixels=7, animation_mode=AnimationModes.S
 # import neopixel
 # pixels = neopixel.NeoPixel(board.GP0, num_pixels=7, brightness=0.5)
 
+
 # some fun ditto facts
 facts = [
         "Ditto is capable of transforming into any Pokemon that it comes across.",
