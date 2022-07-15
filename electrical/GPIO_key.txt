@@ -1,0 +1,22 @@
+GND -> Ground
+NPX -> Neopixel Data Out
+UBT -> USB Boot (short to ground when RP2040 powers up to ender boot loader)
+VRF -> ADC V_Ref (analog to digital converter reference voltage)
+A29 -> GPIO 29 / ADC 3
+A28 -> GPIO 28 / ADC 2
+A27 -> GPIO 27 / ADC 1
+A26 -> GPIO 26 / ADC 0
+G25 -> GPIO 25
+G24 -> GPIO 24
+G23 -> GPIO 23
+G22 -> GPIO 22
+G21 -> GPIO 21
+G20 -> GPIO 20
+G19 -> GPIO 19
+G18 -> GPIO 18
+G17 -> GPIO 17
+RUN -> RESET (restarts code on RP2040)
+VS -> V_Sys (system input voltage, 5V)
+3EN -> 3.3V Enable
+5V -> 5V (from USB VBUS)
+3V3 -> 3.3V out

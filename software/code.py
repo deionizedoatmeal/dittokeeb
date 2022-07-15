@@ -13,6 +13,9 @@ from kmk.extensions.rgb import AnimationModes
 # neopixels are controled with KMK's RBG library, but adafruit's neopixel library works too
 rgb_ext = RGB(pixel_pin=board.GP0, num_pixels=7, animation_mode=AnimationModes.SWIRL)
 
+# set brightness here
+rgb_ext.val = 40
+
 # using adafruit:
 # import neopixel
 # pixels = neopixel.NeoPixel(board.GP0, num_pixels=7, brightness=0.5)
