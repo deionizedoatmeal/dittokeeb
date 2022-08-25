@@ -1,50 +1,50 @@
 [
   [
-    "Esc\n`\n\n~",
-    "Q\n1\n\n!",
-    "W\n2\n\n@",
-    "E\n3\n\n#",
-    "R\n4\n\n$",
-    "T\n5\n\n%",
-    "Y\n6\n\n^",
-    "U\n7\n\n*",
-    "I\n8\n\n*",
-    "O\n9\n\n(",
-    "P\n0\n\n)",
-    "Back<br>Space\n=\n+"
+    "Esc\n`\n~\n~",
+    "Q\nq\n1\n!",
+    "W\nw\n2\n@",
+    "E\ne\n3\n#",
+    "R\nr\n4\n$",
+    "T\nt\n5\n%",
+    "Y\ny\n6\n^",
+    "U\nu\n7\n*",
+    "I\ni\n8\n*",
+    "O\ni\n9\n(",
+    "P\np\n0\n)",
+    "←\n←\n=\n+"
   ],
   [
     {
       "w": 1.25
     },
-    "Tab\nCaps",
-    "A",
-    "S\n\n\n↑",
-    "D",
-    "F",
-    "G",
-    "H\n-\n_",
-    "J\n[\n{",
-    "K\n]\n}",
-    "L\n/\n?",
+    "Tab\nTab\nCap\nLED",
+    "A\na\nA\na",
+    "S\ns\n↑\nL+",
+    "D\nd\nD\nd",
+    "F\nf\nF\nf",
+    "G\ng\nG\ng",
+    "H\nh\n-\nh",
+    "J\nj\n[\n{",
+    "K\nk\n]\n}",
+    "L\nl\n/\n?",
     {
       "w": 1.75
     },
-    "Enter\n\\\n|"
+    "Enter\nEnter\n\\\n|"
   ],
   [
     {
       "w": 1.75
     },
     "Shift",
-    "Z\n\n\n←",
-    "X\n\n\n↓",
-    "C\n\n\n→",
-    "V",
-    "B\n;\n:",
-    "N\n'\n\"",
-    "M\n,\n<",
-    ">\n.",
+    "Z\nz\n←\nz",
+    "X\nx\n↓\nL-",
+    "C\nc\n→\nc",
+    "V\nv\nV\nv",
+    "B\nb\n;\n:",
+    "N\nn\n'\n\"",
+    "M\nm\n,\n<",
+    ".\n>\n>\n>",
     {
       "w": 1.25
     },
@@ -59,10 +59,10 @@
     "Super",
     "Alt",
     {
-      "a": 7,
+      "a": 5,
       "w": 6.25
     },
-    "",
+    "\n(Fn + Space) or (Fn + Shift + Space) = Ditto Factoid",
     {
       "a": 4,
       "w": 1.25
